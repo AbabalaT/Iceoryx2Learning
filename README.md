@@ -1,11 +1,11 @@
 # iceoryx2_install  
-iceoryx2_install tutorial (with hoofs and platform)  
-1. `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
-2. `sudo ./internal/scripts/install_dependencies_ubuntu.sh`  
-3. 进入iceoryx2主目录  
-4. `cmake -S . -B target/ffi/build -DBUILD_EXAMPLES=ON`  
-5. `sudo cmake --build target/ffi/build --target install`  
-6. 更改ci_build_and_install_iceoryx_hoofs.sh（可以直接搜文件位置） ，将两个`-DCMAKE_INSTALL_PREFIX`后的位置改为`/usr/local`  
-7. `sudo ./ci_build_and_install_iceoryx_hoofs.sh`
----
-然后就可以独立编译这个官方例程了。  
+iceoryx2 install tutorial (with hoofs and platform)  
+you can so install iceoryx2 to system library  
+1. `git clone https://github.com/eclipse-iceoryx/iceoryx2.git`
+2. `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+3. `sudo ./internal/scripts/install_dependencies_ubuntu.sh`
+4. enter iceoryx2 directory
+5. `cmake -S . -B target/ffi/build -DBUILD_EXAMPLES=ON`
+6. `sudo cmake --build target/ffi/build --target install`
+7. change ci_build_and_install_iceoryx_hoofs.sh(in iceoryx2/internal/scripts/), modify two paths after`-DCMAKE_INSTALL_PREFIX`to`/usr/local`  
+8. `sudo ./ci_build_and_install_iceoryx_hoofs.sh`
