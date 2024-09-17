@@ -1,4 +1,4 @@
-# iceoryx2_install  
+# Iceoryx2 Install  
 iceoryx2 install tutorial (with hoofs and platform)  
 you can so install iceoryx2 to system library  
 1. `git clone https://github.com/eclipse-iceoryx/iceoryx2.git`
