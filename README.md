@@ -1,4 +1,3 @@
-# Iceoryx2 冰羚2架构 笔记本
 ## 安装：
 安装到系统库，可供Cmake直接找到  
 1. 下载仓库：`git clone https://github.com/eclipse-iceoryx/iceoryx2.git`
